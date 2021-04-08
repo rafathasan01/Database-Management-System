@@ -1,0 +1,25 @@
+Question:
+
+1. Create a query to display the name and salary of employees earning more than $6860.
+2. Create a query to display the employee name, department number and salary for employee number 7844.
+3. Display the ename column as Employee Name from the emp table.
+4. Display the employee name and department number of all employees in departments 10.
+5. Display the sal, comm, (sal+1200)-(sal*34) from emp table.
+6. Display the name and salary of the employee King in such a way that when the query runs the output is KING gets paid $5000.
+7. Write a query to display the name, department number, and salary for all employees.
+8. Display the structure of salgrade table using a sql*plus command.
+9. Display all the data from the salgrade table.
+10. Display only the data from deptno column of emp table. Make sure no rows of duplicate data are repeated.
+
+Answer:
+
+1. select * from emp where sal>6860;
+2. select ename,deptno from emp where empno=7844;
+3. select ename "Employee Name" from emp;
+4. select dname,loc from dept where deptno=10;
+5. select sal,comm,(sal+1200)-(sal*34) from emp;
+6. select ename ||' '||'gets paid'||' '||sal as "Employee Details" from emp where ename='KING';
+7. select ename,deptno,sal from emp;
+8. describe salgrade;
+9. select * from salgrade;
+10. select distinct deptno from emp;

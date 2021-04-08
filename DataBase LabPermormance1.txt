@@ -1,0 +1,25 @@
+Question:
+
+1. Create a query to display all the information from emp table.
+2. Create a query to display all the infromation from the dept table.
+3. Create a query to display all the infromation from the salgrade table.
+4. Display only the department names from the dept table.
+5. Display the losal and hisal column from salgrade table.
+6. Display the grade column from salgrade table where losal is less than $1410.
+7. Display the dptno, dname, loc column from the dept table.
+8. Create a query to display the name and salary of employees earning more than $2850.
+9. Create a query to display the wmployee name and department number for employee number 7566.
+10. Display the name and hire date of every employee who was hired in 1982.
+
+Answer:
+
+1. select * from emp;
+2. select * from dept;
+3. select * from salgrade;
+4. select dname from dept;
+5. select losal, hisal from salgrade;
+6. select * from salgrade where losal<1410;
+7. select deptno, dname, loc from dept;
+8. select * from emp where sal>2850;
+9. select * from emp where empno=7566;
+10. select * from emp where hiredate between '01-JAN-82' and '31-DEC-82';
